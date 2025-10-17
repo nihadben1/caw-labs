@@ -1,0 +1,81 @@
+/** 1 Universal and Type Selectors **/
+*{
+    font: sans-serif;
+    line-height: 1.6;
+
+}
+body{
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2{
+    text-align: center;
+    color:#336699;
+    margin-bottom: 1em;
+}
+
+/** 2 Class and ID Selectors **/
+
+.special{
+    background-color: #fffacd;
+    padding: 10px;
+}
+
+.hello{
+    color: #28a745;
+    font-weight: bold;
+}
+
+/** 3 Descendant and Child Selectors **/
+
+.main-content, .ai-tools >h2{
+    text-transform: uppercase;
+}
+
+.ai-tools ul li{
+    list-style-type: square;
+}
+.ai-tools >ul{
+    padding-left: 20px;
+}
+
+/** 4 Attribute Selectors **/
+input[type="text"]{
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+input[type="submit"]{
+    background-color: #007bff;
+    color: #fff;
+}
+
+/** 5 Pseudo-classes and Pseudo-elements **/
+a{
+    color: #007bff;
+}
+a:hover{
+    text-decoration: none;
+    color: darkblue;
+} 
+a:visited{
+    color: #6c757d;
+}  
+input:focus{
+    border: 2px solid blue;
+}
+
+/** 6 Combining Selectors & Specificity Challenge **/
+
+.ai-tools li.hello{
+    font-style: italic;
+}
+
+footer h1{
+    font-size: 1.2em;
+}
+
+h1{
+    font-size: 2em;
+}
